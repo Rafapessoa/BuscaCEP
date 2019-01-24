@@ -4,15 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PesquisaActivity">
+    tools:context=".ui.pesquisar.PesquisaActivity">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_gravity="center"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
         <EditText
             android:id="@+id/etCEP"
+            android:inputType="number"
             android:hint="Digite o CEP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
